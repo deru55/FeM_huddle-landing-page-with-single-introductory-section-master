@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-  padding: 2rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
@@ -47,7 +47,8 @@ body {
 }
 
 .huddle-logo {
-  width: 8rem;
+  width: max(8rem, 15vw);
+  aspect-ratio: 35 / 4;
 }
 
 .grid-group {
@@ -119,21 +120,18 @@ body {
   }
 
   .container {
-    max-width: 80rem;
+    max-width: 75rem;
     justify-content: space-between;
-  }
-
-  .huddle-logo {
-    width: 13rem;
+    margin: 4rem 2rem;
   }
 
   .grid-group {
     grid-template-columns: 2fr 1fr;
+    gap: 1rem;
   }
 
   .flex-group {
     align-items: flex-start;
-    padding: 2.5rem 0;
   }
 
   .title-section {
@@ -142,5 +140,15 @@ body {
 
   .flex-row {
     justify-content: flex-end;
+  }
+
+  .content-section {
+    padding: 3rem 0;
+  }
+
+  .link {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    width: 2.5rem;
   }
 }
