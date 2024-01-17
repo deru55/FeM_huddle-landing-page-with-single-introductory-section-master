@@ -110,7 +110,7 @@ body {
   border-color: var(--clr-primary-2);
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1150px) {
   body {
     background: url(images/bg-desktop.svg) no-repeat;
     background-size: cover;
@@ -128,7 +128,7 @@ body {
   }
 
   .grid-group {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: auto 1fr;
   }
 
   .flex-group {
